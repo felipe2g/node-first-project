@@ -1,0 +1,14 @@
+{
+  "name": "node-first-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/felipe2g/node-first-project.git",
+  "author": "Felipe Guimarães <felipeguimaraes2406@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
