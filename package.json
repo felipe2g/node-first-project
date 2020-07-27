@@ -5,6 +5,9 @@
   "repository": "https://github.com/felipe2g/node-first-project.git",
   "author": "Felipe Guimarães <felipeguimaraes2406@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
