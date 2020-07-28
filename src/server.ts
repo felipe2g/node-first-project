@@ -1,9 +1,11 @@
 import express from 'express';
 
 // src/server.ts
-import routes from './routes';
+import routes from './routes/index';
 
 const app = express();
+app.use(express.json());
+app.use(routes);
 
 app.get('/', (request, response) =>
   response.json({ message: 'hello Felipe!' }),
