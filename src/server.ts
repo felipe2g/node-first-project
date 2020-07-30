@@ -1,7 +1,7 @@
 import express from 'express';
-
-// src/server.ts
 import routes from './routes/index';
+
+import './database/index';
 
 const app = express();
 app.use(express.json());
