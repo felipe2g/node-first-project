@@ -3,6 +3,8 @@ import { hash } from 'bcryptjs';
 
 import User from '../models/Users';
 
+import AppError from '../errors/AppError';
+
 interface Request {
   name: string;
   email: string;
@@ -18,7 +20,7 @@ class CreateUserService {
     });
 
     if (checkUserExists) {
-      throw new Error('Email adress aldready used.');
+      throw new AppError('Email adress aldready used.', 400);
     }
 
     const hashedPassword = await hash(password, 8);
