@@ -14,8 +14,6 @@ export default function ensureAuthenticated(
   res: Response,
   next: NextFunction,
 ): void {
-  // Validação do token
-
   const authHeader = req.headers.authorization;
 
   if (!authHeader) {
